@@ -10,7 +10,7 @@ export const OpcionInicio = () => {
   
     return (
     <div>
-        <Pregunta
+        {/* <Pregunta
         titulo="¿Alguna vez tuvo/tiene algun problema de salud mental?"
         opciones={["Si","No"]}
       />
@@ -18,7 +18,7 @@ export const OpcionInicio = () => {
 <Pregunta
         titulo="¿Alguien de su alrededor lo tuvo/tiene?"
         opciones={["Si","No"]}
-      />
+      /> */}
     </div>
      
   );
