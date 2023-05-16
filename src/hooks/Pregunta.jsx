@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -8,22 +8,24 @@ export const Pregunta = ({titulo, opciones}) => {
     const [cuenta, setCuenta] = useState(0)
 
   
-    // const handleRespuesta = (e) => {
-    //   setRespuesta();
-    //   setOpcionesBloqueadas(true);
-      
-    //   const valorindex = opciones.indexOf(respuesta);
-    //   const isLargeNumber = (respuesta);
-    //   console.log(valorindex)
-    //   // console.log(opciones)
-    // }
+  
+  //I want to add the values of the clicked index and accumulate them in the variable "cuenta"?
+    const cuentaMetodo = (index) => {
+      var total = 0;
+      total += index;
+      setCuenta(total)
+    } //revisar este metodo
 
-    const handleRespuesta = (indice) => {
-      setRespuesta(indice);
+  
+
+    const handleRespuesta = (index) => {
+      setRespuesta(index);
       setOpcionesBloqueadas(true);
+      cuentaMetodo(index)
     };
 
-    console.log(respuesta)
+    console.log("la cuenta es",cuenta)
+    console.log("la respuesta",respuesta)
   
     return (
       <div className="container mt-5">
@@ -39,7 +41,6 @@ export const Pregunta = ({titulo, opciones}) => {
                 value={opcion}
                 checked={respuesta === index}
                 onChange={() => handleRespuesta(index)}
-                // onChange={handleRespuesta} 
                 disabled={opcionesBloqueadas && respuesta !== opcion}
               />
               <label className="form-check-label">{opcion}</label>

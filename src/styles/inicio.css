@@ -1,4 +1,15 @@
-.contportada{
-    background-color: #7de57d;
-    color: white;
+
+p{
+    font-size: larger;
+}
+
+.intro{
+    background-color: #B8F1F2;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: larger;
+        
 }
