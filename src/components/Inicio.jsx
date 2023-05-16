@@ -1,14 +1,20 @@
 import React from "react";
 import "../styles/inicio.css";
 import portada from "../assets/portada.png";
+import nube from "../assets/nube.png";
+import portadaAnimada from "../assets/portadaAnimada.mp4";
 
 export const Inicio = () => {
   return (
     <div>
+     
+
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <img src={portada} alt="portada" className="img-fluid imgPortada" />
+            <video autoPlay muted loop className="videoPortada">
+              <source src={portadaAnimada} type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
@@ -20,7 +26,7 @@ export const Inicio = () => {
               <div class="card-body">
                 <h1 class="card-title text-center">¿Qué es la salud mental?</h1>
                 <p class="card-text mt-5">
-                  La salud mental es un estado de bienestar en el que la persona
+                  La salud mental es un estado de bienestar donde la persona
                   es consciente de sus propias capacidades, puede afrontar las
                   tensiones normales de la vida, puede trabajar de forma
                   productiva y fructífera y es capaz de hacer una contribución a
@@ -28,6 +34,14 @@ export const Inicio = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid">
+        <div className="row d-flex justify-content-center align-items-center">
+          <div className="col-12 ">
+            <img src={nube} alt="nubes" className="img-fluid nubes" />
           </div>
         </div>
       </div>
