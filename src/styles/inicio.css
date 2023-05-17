@@ -14,10 +14,27 @@ p{
 
 }
 
+.contnube{
+    background-color: #006a73;
+    
+}
+
+.contopciones{
+    background-color: #006a73;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+}
+.head{
+    height: 300px;
+}
+
 .nubes{
     
     padding-left: 150px;
-    height: 80vh;
+    height: 50vh;
     filter: hue-rotate(10deg) saturate(1) brightness(1.5);
 }
 
