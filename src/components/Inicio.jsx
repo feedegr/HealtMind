@@ -4,6 +4,7 @@ import portada from "../assets/portada.png";
 import nube from "../assets/nube.png";
 import portadaAnimada from "../assets/portadaAnimada.mp4";
 import mental from "../assets/mental.png";
+import heart from "../assets/heart.png";
 
 export const Inicio = () => {
   return (
@@ -73,7 +74,7 @@ export const Inicio = () => {
         <div className="row">
           <h1 className="text-center mb-5 text-white">¿Qué puedo hacer al respecto?</h1>
 
-          <div className="col-4 d-flex align-items-center">
+          <div className="col-md-4 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
                 <p>
@@ -86,7 +87,7 @@ export const Inicio = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 d-flex align-items-center">
+          <div className="col-md-4 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
                 <p>
@@ -99,7 +100,7 @@ export const Inicio = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 d-flex align-items-center">
+          <div className="col-md-4 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
                 <p>
@@ -111,7 +112,7 @@ export const Inicio = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 d-flex align-items-center">
+          <div className="col-md-4 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
                 <p>
@@ -123,14 +124,14 @@ export const Inicio = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 align-items-center">
+          <div className="col-md-4 align-items-center">
             <div className="card intro">
               <div className="card-body">
-              <img src={mental} alt="mental man" className="img-fluid head" />
+              <img src={heart} alt="mental man" className="img-fluid head" />
               </div>
             </div>
           </div>
-          <div className="col-4 d-flex align-items-center">
+          <div className="col-md-4 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
               <p>
@@ -145,6 +146,9 @@ export const Inicio = () => {
           </div>
         </div>
       </div>
+{/* 
+      agregar si tenes uno de estos problemas queres hacer el test? y boton */}
+
 
 {/*      
       <p className="col-8">
