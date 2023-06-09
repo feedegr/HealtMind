@@ -4,13 +4,17 @@ import { Pregunta } from "../hooks/Pregunta";
 import { Resultado } from "../hooks/Resultado";
 
 export const Quiz = () => {
+
+  
   
   const [sumaindices, setSumaIndices] = useState(0);
+  
 
   const handleIndexSeleccionado = (index) => {
     setSumaIndices((sumaindices) => sumaindices + index);
-   
+ 
   };
+
   
 
   return (

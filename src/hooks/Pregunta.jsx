@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import {useState} from "react";
+import "../styles/preguntas.css";
 
 
 export const Pregunta = ({titulo, opciones,onIndexSeleccionado }) => {
@@ -11,15 +12,11 @@ export const Pregunta = ({titulo, opciones,onIndexSeleccionado }) => {
       setOpcionesBloqueadas(true);
       onIndexSeleccionado(index);
     };
-
-    
-    
   
     return (
-      <div className="container mt-5">
+      <div className="container mt-5 contpreguntas" style={{ backgroundColor: '#006A73' }}>
+        <h4 className="mb-3 text-center pb-4 pt-4">{titulo}</h4> 
         <div className="col-8">
-        <h4 className="mb-3">{titulo}</h4>
-        
         <form>
           {opciones.map((opcion,index) => (
             <div className="form-check mb-3" key={index}>
@@ -32,7 +29,7 @@ export const Pregunta = ({titulo, opciones,onIndexSeleccionado }) => {
                 onChange={() => handleRespuesta(index)}
                 disabled={opcionesBloqueadas && respuesta !== opcion}
               />
-              <label className="form-check-label">{opcion}</label>
+              <label className="form-check-label ml-5">{opcion}</label>
             </div>
           ))} 
         </form>

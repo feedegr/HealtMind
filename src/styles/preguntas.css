@@ -1,0 +1,13 @@
+.contpreguntas{
+    background-color: #006A73;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    color: white;
+}
+
+.result{
+    background-color: #006A73;
+    color: white;
+}

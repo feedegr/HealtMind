@@ -5,10 +5,14 @@ import nube from "../assets/nube.png";
 import portadaAnimada from "../assets/portadaAnimada.mp4";
 import mental from "../assets/mental.png";
 import heart from "../assets/heart.png";
+import brain from "../assets/brain.gif";
+import { Link } from "react-router-dom";
 
 export const Inicio = () => {
   return (
     <div>
+
+      <header>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
@@ -18,14 +22,18 @@ export const Inicio = () => {
           </div>
         </div>
       </div>
+      </header>
 
+      <section>
       <div className="container-fluid mt-5 contnube pb-5">
         <div className="row">
-          <div class="col-6 d-flex align-items-center">
-            <div class="card intro">
-              <div class="card-body">
-                <h1 class="card-title text-center">¿Qué es la salud mental?</h1>
-                <p class="card-text mt-5">
+          <div className="col-6 d-flex align-items-center">
+            <div className="card intro">
+              <div className="card-body">
+                <h1 className="card-title text-center">
+                  ¿Qué es la salud mental?
+                </h1>
+                <p className="card-text mt-5">
                   La salud mental es un estado de bienestar donde la persona es
                   consciente de sus propias capacidades, puede afrontar las
                   tensiones normales de la vida, puede trabajar de forma
@@ -40,14 +48,16 @@ export const Inicio = () => {
           </div>
         </div>
       </div>
+      </section>
 
+      <section>
       <div className="container-fluid mt-5 contnube pb-1">
         <div className="row">
-          <div class="col-12 d-flex align-items-center">
-            <div class="card intro">
-              <div class="card-body">
-                <h1 class="card-title text-center">La depresión</h1>
-                <p class="card-text mt-5">
+          <div className="col-12 d-flex align-items-center">
+            <div className="card intro">
+              <div className="card-body">
+                <h1 className="card-title text-center">La depresión</h1>
+                <p className="card-text mt-5">
                   La depresión es un trastorno del estado de ánimo que puede
                   afectar la forma en que una persona piensa, siente y actúa.
                   Las personas que padecen depresión pueden experimentar
@@ -69,10 +79,14 @@ export const Inicio = () => {
           </div>
         </div>
       </div>
-
+      </section>
+      
+      <section>
       <div className="container-fluid mt-5 contopciones pb-5">
         <div className="row">
-          <h1 className="text-center mb-5 text-white">¿Qué puedo hacer al respecto?</h1>
+          <h1 className="text-center mb-5 text-white">
+            ¿Qué puedo hacer al respecto?
+          </h1>
 
           <div className="col-md-4 d-flex align-items-center">
             <div className="card intro">
@@ -127,14 +141,14 @@ export const Inicio = () => {
           <div className="col-md-4 align-items-center">
             <div className="card intro">
               <div className="card-body">
-              <img src={heart} alt="mental man" className="img-fluid head" />
+                <img src={heart} alt="mental man" className="img-fluid head" />
               </div>
             </div>
           </div>
           <div className="col-md-4 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
-              <p>
+                <p>
                   {" "}
                   Fomentar la alimentación saludable: La alimentación también
                   puede tener un impacto en la depresión. Fomentar una dieta
@@ -146,33 +160,126 @@ export const Inicio = () => {
           </div>
         </div>
       </div>
-{/* 
-      agregar si tenes uno de estos problemas queres hacer el test? y boton */}
+      </section>
 
+      <section>
+        <div className="container-fluid mt-5 contopciones pb-5">
+          <div className="row">
+            <div className="col-6 d-flex">
+              <div className="card intro">
+                <div className="card-body">
+                  <h1 className="card-title text-center">
+                    ¿Cómo puedo ayudar a alguien con depresión?
+                  </h1>
 
-{/*      
-      <p className="col-8">
-        Tipos de depresión: Hay varios tipos de depresión, que incluyen
-        depresión mayor, trastorno depresivo persistente, trastorno afectivo
-        estacional y depresión posparto. Cada uno de ellos tiene sus propios
-        síntomas y formas de tratamiento. Factores de riesgo: Algunos factores
-        que pueden aumentar el riesgo de desarrollar depresión incluyen
-        antecedentes familiares de depresión, estrés crónico, ciertos trastornos
-        médicos, abuso de sustancias y algunos medicamentos. Tratamientos: Hay
-        varios tratamientos disponibles para la depresión, incluyendo
-        psicoterapia y medicamentos antidepresivos. A menudo, se utiliza una
-        combinación de ambos para lograr los mejores resultados. Prevención: La
-        prevención de la depresión puede incluir cambios en el estilo de vida,
-        como mantener una dieta saludable, hacer ejercicio regularmente y
-        participar en actividades sociales. También es importante buscar
-        tratamiento para otros trastornos de salud mental que puedan aumentar el
-        riesgo de depresión, como la ansiedad. Importancia de buscar ayuda: Si
-        sospechas que tú o alguien que conoces puede estar experimentando
-        depresión, es importante buscar ayuda de un profesional de la salud
-        mental. La depresión puede ser un trastorno grave que puede tener un
-        impacto significativo en la calidad de vida de una persona, pero con el
-        tratamiento adecuado, la mayoría de las personas pueden recuperarse.
-      </p>  */}
+                  <li className="card-text mt-5">
+                    Ten presente que el otro te necesita y te valora, aunque te
+                    parezca que no.
+                  </li>
+                  <li className="card-text mt-3">
+                    Nunca digas “tranquilízate” ni “intenta animarte”, a menos
+                    que también vayas a brindar instrucciones detalladas e
+                    infalibles.
+                  </li>
+                  <li className="card-text mt-3">
+                    Debes escucharlo con atención y sin interrumpirlo. Ponte en
+                    su lugar y trata de comprender lo que siente.
+                  </li>
+                  <li className="card-text mt-3">
+                    Entiende que se trata de una enfermedad. No es una debilidad
+                    ni una falta de voluntad. Respeta su tiempo y su espacio.
+                    Quién lo padece no se hace el enfermo y la "víctima" para
+                    llamar la atención.
+                  </li>
+                  <p className="card-text mt-5 mb-3">
+                    También es importante recordar que la depresión es una
+                    enfermedad tratable y que hay ayuda disponible. Si la
+                    persona con depresión está luchando por sí sola, es
+                    importante animarla a buscar ayuda profesional y ofrecerle
+                    apoyo emocional.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-6 d-flex">
+              <div className="card intro">
+                <div className="card-body">
+                  {/* //agregar imagen gif importada brain */}
+                  <img src={brain} alt="brain" className="brain" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container-fluid mt-5 contopciones pb-5">
+          <div className="row">
+            <div className="col-12 d-flex">
+              <div className="card intro">
+                <div className="card-body">
+                  <li className="card-text mt-3">
+                    Tipos de depresión: Hay varios tipos de depresión, que
+                    incluyen depresión mayor, trastorno depresivo persistente,
+                    trastorno afectivo estacional y depresión posparto. Cada uno
+                    de ellos tiene sus propios síntomas y formas de tratamiento.</li>
+
+                    <li className="mt-3">Factores de riesgo: Algunos factores que pueden aumentar el
+                    riesgo de desarrollar depresión incluyen antecedentes
+                    familiares de depresión, estrés crónico, ciertos trastornos
+                    médicos, abuso de sustancias y algunos medicamentos.</li>
+
+                    <li className="mt-3">Tratamientos: Hay varios tratamientos disponibles para la
+                    depresión, incluyendo psicoterapia y medicamentos
+                    antidepresivos. A menudo, se utiliza una combinación de
+                    ambos para lograr los mejores resultados.</li>
+
+                    <li className="mt-3">Prevención: La prevención de la depresión puede incluir cambios en el
+                    estilo de vida, como mantener una dieta saludable, hacer
+                    ejercicio regularmente y participar en actividades sociales.
+                    También es importante buscar tratamiento para otros
+                    trastornos de salud mental que puedan aumentar el riesgo de
+                    depresión, como la ansiedad.</li>
+
+                    <li className="mt-3">Importancia de buscar ayuda: Si
+                    sospechas que tú o alguien que conoces puede estar
+                    experimentando depresión, es importante buscar ayuda de un
+                    profesional de la salud mental. La depresión puede ser un
+                    trastorno grave que puede tener un impacto significativo en
+                    la calidad de vida de una persona, pero con el tratamiento
+                    adecuado, la mayoría de las personas pueden recuperarse.
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container-fluid mt-5 pb-5">
+          <div className="row no-gutters">
+            <div className="col-6 ">
+              
+              <a href="/quiz" className="card cardcolor">
+                <div className="card-body text-center">
+                  <h1 className="text-center">Test de depresión</h1>
+                </div>
+              </a>
+            </div>
+            <div className="col-6 ">
+              <a href="/centros" className="card cardcolor2">
+                <div className="card-body text-center">
+                  <h1>Centros de ayuda</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };
