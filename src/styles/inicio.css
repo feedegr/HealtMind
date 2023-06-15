@@ -1,7 +1,7 @@
 
 
 p,li{
-    font-size: larger;
+    font-size: x-large;
 }
 
 .intro{
@@ -11,13 +11,13 @@ p,li{
     padding: 10px;
     margin: 10px;
     text-align: center;
-    font-size: larger;
+    
 
 }
 
 .cardcolor{
     background-color: #E074A3;
-    margin-left: 30px;
+    
     padding-top: 200px;
     text-decoration: none;
     padding-bottom: 200px;
@@ -27,7 +27,7 @@ p,li{
     font-size: larger;
     color: white;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 
 }
 
@@ -37,12 +37,12 @@ p,li{
     padding-bottom: 200px;
     text-decoration: none;
     border-radius: 10px;
-    margin-right: 30px;
+    
     text-align: center;
     font-size: larger;
     color: white;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 
 }
 

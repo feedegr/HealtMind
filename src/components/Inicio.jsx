@@ -1,12 +1,12 @@
 import React from "react";
+
 import "../styles/inicio.css";
-import portada from "../assets/portada.png";
+
 import nube from "../assets/nube.png";
 import portadaAnimada from "../assets/portadaAnimada.mp4";
-import mental from "../assets/mental.png";
 import heart from "../assets/heart.png";
 import brain from "../assets/brain.gif";
-import { Link } from "react-router-dom";
+
 
 export const Inicio = () => {
   return (
@@ -15,7 +15,7 @@ export const Inicio = () => {
       <header>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12">
+          <div className="col-md-12">
             <video autoPlay muted loop className="videoPortada">
               <source src={portadaAnimada} type="video/mp4" />
             </video>
@@ -27,7 +27,7 @@ export const Inicio = () => {
       <section>
       <div className="container-fluid mt-5 contnube pb-5">
         <div className="row">
-          <div className="col-6 d-flex align-items-center">
+          <div className="col-md-6 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
                 <h1 className="card-title text-center">
@@ -43,7 +43,7 @@ export const Inicio = () => {
               </div>
             </div>
           </div>
-          <div className="col-6 ">
+          <div className="col-sm-6 d-md-block ">
             <img src={nube} alt="nubes" className="img-fluid nubes" />
           </div>
         </div>
@@ -53,7 +53,7 @@ export const Inicio = () => {
       <section>
       <div className="container-fluid mt-5 contnube pb-1">
         <div className="row">
-          <div className="col-12 d-flex align-items-center">
+          <div className="col-md-12 d-flex align-items-center">
             <div className="card intro">
               <div className="card-body">
                 <h1 className="card-title text-center">La depresión</h1>
@@ -165,7 +165,7 @@ export const Inicio = () => {
       <section>
         <div className="container-fluid mt-5 contopciones pb-5">
           <div className="row">
-            <div className="col-6 d-flex">
+            <div className="col-md-8 d-flex">
               <div className="card intro">
                 <div className="card-body">
                   <h1 className="card-title text-center">
@@ -202,7 +202,7 @@ export const Inicio = () => {
               </div>
             </div>
 
-            <div className="col-6 d-flex">
+            <div className="col-md-4 d-md-block d-flex">
               <div className="card intro">
                 <div className="card-body">
                   {/* //agregar imagen gif importada brain */}
@@ -217,7 +217,7 @@ export const Inicio = () => {
       <section>
         <div className="container-fluid mt-5 contopciones pb-5">
           <div className="row">
-            <div className="col-12 d-flex">
+            <div className="col-md-12 d-flex">
               <div className="card intro">
                 <div className="card-body">
                   <li className="card-text mt-3">
@@ -261,15 +261,14 @@ export const Inicio = () => {
       <section>
         <div className="container-fluid mt-5 pb-5">
           <div className="row no-gutters">
-            <div className="col-6 ">
-              
+            <div className="col-sm-6 mt-3 ">
               <a href="/quiz" className="card cardcolor">
                 <div className="card-body text-center">
                   <h1 className="text-center">Test de depresión</h1>
                 </div>
               </a>
             </div>
-            <div className="col-6 ">
+            <div className="col-sm-6 mt-3 ">
               <a href="/centros" className="card cardcolor2">
                 <div className="card-body text-center">
                   <h1>Centros de ayuda</h1>
@@ -279,6 +278,8 @@ export const Inicio = () => {
           </div>
         </div>
       </section>
+
+      
 
     </div>
   );
