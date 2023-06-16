@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../styles/inicio.css";
 
@@ -273,18 +274,18 @@ export const Inicio = () => {
         <div className="container-fluid mt-5 pb-5">
           <div className="row no-gutters">
             <div className="col-sm-6 mt-3 ">
-              <a href="/quiz" className="card cardcolor">
+              <Link to="/quiz" className="card cardcolor">
                 <div className="card-body text-center">
                   <h1 className="text-center">Test de depresión</h1>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-sm-6 mt-3 ">
-              <a href="/centros" className="card cardcolor2">
+              <Link to="/centros" className="card cardcolor2" >
                 <div className="card-body text-center">
                   <h1>Centros de ayuda</h1>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
