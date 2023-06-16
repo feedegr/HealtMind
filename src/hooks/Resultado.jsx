@@ -26,8 +26,7 @@ export const Resultado = ({ sumaindices, respuestasCompletas }) => {
     setBloqueado(todasLasPreguntasRespondidas);
   }, [respuestasCompletas]);
 
-  console.log(respuestasCompletas);
-  console.log(bloqueado);
+
 
   const handleclick = () => {
     setMostrar(true);
