@@ -68,7 +68,7 @@ export const CentrosAyuda = () => {
       <div className="container mt-5 centrostyle pb-5">
         <div className="row">
           {tarjetas.map((tarjeta, index) => (
-            <div className="col-6" key={index}>
+            <div className="col-md-6" key={index}>
               <div className="card cardcentro">
                 <div className="card-body">
                   <h2 className="card-title">{tarjeta.titulo}</h2>
